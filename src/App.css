@@ -1,38 +1,69 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: tomato;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.input {
+  width: 100%;
+  flex: 30%;
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.186);
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input input {
+  width: 200px;
+  height: 30px;
+}
+.input button {
+  width: 50px;
+  height: 25%;
+  cursor: pointer;
+}
+.todoWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.todoList {
+  flex: 70%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(199, 99, 99, 0.398);
+}
+.TASKS {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  background-color: blueviolet;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.TASKS :first-child {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  width: 100%;
+}
+.TASKS div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(162, 238, 10);
+  width: 10%;
+}
+.TASKS button {
+  font-size: 35px;
+  background-color: tomato;
+  width: 10%;
 }
